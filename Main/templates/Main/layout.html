@@ -35,9 +35,18 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Categorias</a>
+                            <li class="nav-item"> 
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle" id="categories-dropdown" data-bs-toggle="dropdown" href="#">Categorias</a>
+                                   
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </div>
                             </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{% url 'About us' %}">Acerca de</a>
                             </li>
